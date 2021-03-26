@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="aula03linux" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/aula01linux" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="SFML-2.5.1/includeLinux" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add directory="SFML-2.5.1/libLinux" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/aula01" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Animacao.h" />
+		<Unit filename="include/Cena.h" />
+		<Unit filename="include/Colisor.h" />
+		<Unit filename="include/Inimigo.h" />
+		<Unit filename="include/Inventario.h" />
+		<Unit filename="include/Item.h" />
+		<Unit filename="include/Jogador.h" />
+		<Unit filename="include/Mapa.h" />
+		<Unit filename="include/Objetivo.h" />
+		<Unit filename="include/Plataforma.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Animacao.cpp" />
+		<Unit filename="src/Cena.cpp" />
+		<Unit filename="src/Colisor.cpp" />
+		<Unit filename="src/Inimigo.cpp" />
+		<Unit filename="src/Inventario.cpp" />
+		<Unit filename="src/Item.cpp" />
+		<Unit filename="src/Jogador.cpp" />
+		<Unit filename="src/Mapa.cpp" />
+		<Unit filename="src/Objetivo.cpp" />
+		<Unit filename="src/Plataforma.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
